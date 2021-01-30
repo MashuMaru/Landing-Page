@@ -18,10 +18,12 @@
             
             <h1>Welcome!</h1>
 
-            <form onsubmit="return">
-                <p><input id="nameInput" type="text" placeholder="What is your name?"></input></p>
+            <form action="pages/landing.html?" method="GET">
+                <label for="nameInput"></label>
+                <input id="nameInput" type="text" placeholder="What is your name?"></input>
             </form>   
-            <a href="pages/landing.html"><button type="button" class="search-button" onclick="pushName()">Submit</button></a>
+            <a href="pages/landing.html"><button id="submit" type="submit" onclick="getName()" class="search-button">Enter</button></a>
+            
         </div>        
     </div>
     
