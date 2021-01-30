@@ -1,24 +1,19 @@
 
+var nameValue = document.getElementById("nameInput").value;
+document.getElementById("personalGreeting").innerHTML = ("Good afternoon, " + nameValue + ".");
 
-function handleName() {
-    var nameValue = document.getElementById("nameInput").value;
-    localStorage.setItem("storageName",getInput);
-    window.onload = alert(localStorage.getItem("storageName"));
-    document.getElementById("personalGreeting").innerHTML = ("Good morning, " + nameValue + ".");
-
-}
 
 // CLOCK AND DATE
+
 function runTime () {
-var time = new.Date();
-var hour = time.getHours();
-var minute = time.getMinutes();
+    var time = new Date();
+    var hour = time.getHours();
+    var minute = time.getMinutes();
 
-document.getElementById("hour").innerHTML = (hour);
-document.getElementById("minute").innerHTML = (minute);
+    document.getElementById("hour").innerHTML = (hour);
+    document.getElementById("minute").innerHTML = (minute);
+}; setInterval(runTime, 1000);
 
-}; 
-setInterval(runTime, 1000);
 // CLOCK AND DATE
 
 
