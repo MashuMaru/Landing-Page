@@ -51,7 +51,7 @@ function runTime () {
     }
 
     if (hour < 10) {
-        minute = "0" + hour;
+        hour = "0" + hour;
     }
 
 // GREETING MESSAGE
@@ -62,7 +62,7 @@ function runTime () {
     } else {
         var greeting = "Good evening, ";
     }
-   
+
     document.getElementById("personalGreeting").innerHTML =(greeting+userName+".");
    
   
