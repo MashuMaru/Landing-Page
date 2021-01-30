@@ -6,7 +6,6 @@ body, html {
     color: white;
     overflow: hidden;
     font-family: 'Lato', sans-serif;
-
 }
 
 .clock-date {
@@ -30,13 +29,13 @@ button {
 
 .inner-div {
     display: block;
-    width: 50%;
-    /* width: 100%; */
+    background-color: rgba(73, 73, 73, 0.623); 
+    border-radius: 50px;   
+    width: 500px;
     height: 300px;
-    /* padding-top: 15%; */
-    /* padding-bottom: auto; */
+    padding: 50px;
     margin-bottom: auto;
-    margin-top: auto;
+    margin-top: 15%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -44,8 +43,9 @@ button {
 
 .landing-img {
     background-color: black;
-    background-repeat: no-repeat;
+    position: fixed;
     width: 100%;
+    height: 100vh;
     /* height: 100%; */
     position: absolute;
     top: 0;
