@@ -1,7 +1,10 @@
 
-var nameValue = document.getElementById("nameInput").value;
-document.getElementById("personalGreeting").innerHTML = ("Good afternoon, " + nameValue + ".");
-
+function getName() {
+    var nameValue = document.getElementById("nameInput").value;
+    function pushName() {
+        document.getElementById("personalGreeting").innerHTML = ("Good afternoon, " + nameValue + ".");
+    }
+}
 
 // CLOCK AND DATE
 
