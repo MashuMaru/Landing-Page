@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Welcome!</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
-    <link href="landing.html">
+    <link href="index.html">
 </head>
 <body>
     <div class="landing-page">
         <img class="landing-img" src="design/landing-img.png" alt="landing">
         <div class="inner-div">
+            <div class="clock-date">
+                <span id="hour"></span>
+                <span>:</span>
+                <span id="minute"></span>
+            </div>
+                <p><span id="day">Saturday </span><span id="date">30 </span><span id="month">January </span><span class="year">2021 </span></p>
             
-            <h1>Welcome!</h1>
+            <h1 id="personalGreeting"></h1>
 
             <form onsubmit="return">
-                <p><input id="nameInput" type="text" placeholder="What is your name?"></input></p>
+                <p><input id="search" type="text" placeholder="What do you want to search for today?"></input></p>
             </form>   
-            <a href="landing.html"><button type="button" onclick="handleName()" class="search-button">Submit</button></a>
+            <a><button type="button" onclick="handleSearch()" class="search-button">Search</button></a>
         </div>        
     </div>
+
     
     <script src="app.js"></script>
 </body>
