@@ -6,6 +6,8 @@ function passValues() {
     localStorage.setItem("textvalue", name);
     return false;
 }
+
+
 // clock and date 
 function runTime () {
     var time = new Date();
@@ -39,7 +41,7 @@ function runTime () {
         month[11] = "December";
     var fullMonth = month[time.getMonth()];
 
-    var copyright = "©"+year+". All rights reserved. Developed by Mashumaru."
+    var copyright = year;
     document.getElementById("footer-info").innerHTML = copyright;
 
     if (minute < 10) {

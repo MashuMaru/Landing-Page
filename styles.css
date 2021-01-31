@@ -9,7 +9,6 @@ body, html {
 }
 
 .clock-date {
-    /* margin-bottom: 1%; */
     font-size: 3em;
 }
 
@@ -44,7 +43,6 @@ button {
 .landing-page {
     text-align: center;
     height: 100vh;
-    /* height: 100%; */
     width: 100%;
     position: absolute;
     display: flex;
@@ -53,21 +51,16 @@ button {
 
 .inner-div {
     display: block;
-    background-color: rgba(73, 73, 73, 0.664); 
+    /* background-color: rgba(73, 73, 73, 0.664);  */
+    background-color:rgba(0,0,0,0.6);
     border-radius: 50px;   
     width: 500px;
     height: 300px;
     padding: 50px;
-    /* position: relative; */
-    
-    /* margin-top: 15%; */
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    /* margin: 0px auto; */
-    /* position: static; */
-    /* text-align: center; */
 }
 
 .landing-img {
@@ -77,13 +70,11 @@ button {
     background-size: cover;
     background-color: black;
     position: fixed;
-    /* width: 100%;
-    height: 100vh; */
-    /* height: 100%; */
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+    /* opacity: 90%; */
 }
 
 .search-button {
@@ -138,5 +129,7 @@ button {
     position: absolute;
     bottom: 0;
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
+    font-size: 14px;
+    padding: -15px;
 }
