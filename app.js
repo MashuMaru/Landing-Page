@@ -63,6 +63,7 @@ function runTime () {
     // retrieving data from index.html
     var userName = localStorage.getItem("textvalue");
     document.getElementById("personalGreeting").innerHTML = greeting+userName+".";
+    document.getElementById("title-name").innerHTML = "Welcome, "+userName+"!";
    
 
     document.getElementById("hour").innerHTML = (hour);
