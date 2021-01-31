@@ -53,7 +53,7 @@ button {
 
 .inner-div {
     display: block;
-    background-color: rgba(73, 73, 73, 0.623); 
+    background-color: rgba(73, 73, 73, 0.664); 
     border-radius: 50px;   
     width: 500px;
     height: 300px;
@@ -93,6 +93,7 @@ button {
     color: white;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+    font-size: 1em;
     border-radius: 50px;
     transition: all 0.5s ease 0s;
 }
@@ -106,3 +107,36 @@ button {
     -webkit-transform: scale(1.1); 
 }
 
+
+.go-button {
+    padding: 10px 25px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    border-radius: 50px;
+    transition: all 0.5s ease 0s;
+    width: 100px;
+}
+
+.go-button:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease 0s;
+    transition: transform .5s, visibility .5s ease-in;
+    -ms-transform: scale(1.1);  
+    -webkit-transform: scale(1.1); 
+}
+
+.go-button {
+    cursor: pointer;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}

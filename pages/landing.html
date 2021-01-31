@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome!</title>
-    <!-- <script src="app.js"></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
@@ -15,23 +15,26 @@
     <div class="landing-page">
         <img class="landing-img" src="../design/landing-img.png" alt="landing">
         <div class="inner-div">
-            <div class="clock-date">
-                <span id="hour"></span>
+            <div class="clock-date" data-aos="zoom-in" data-aos-duration="3000">
+                <span id="hour">00</span>
                 <span>:</span>
-                <span id="minute"></span>
+                <span id="minute">00</span>
             </div>
-                <p><span id="day"></span><span id="date"></span><span id="month"></span><span id="year"></span></p>
+                <p data-aos="zoom-in" data-aos-duration="3000"><span id="day"></span><span id="date"></span><span id="month"></span><span id="year"></span></p>
             
-            <h1 id="personalGreeting"></h1>
+            <h1 id="personalGreeting" onload="pushName()"></h1>
 
             <form>
-                <p><input id="search" type="text" placeholder="What do you want to search for today?"></input></p>
+                <p><input id="search" type="text" placeholder="What do you want to search for today?" autocomplete="off"></input></p>
             </form>   
             <a><button id="searchBtn" type="button" onclick="handleSearch()" class="search-button">Search</button></a>
-        </div>        
+        </div>    
+        <div class="footer">
+            <p id="footer-info"></p>
+        </div>    
     </div>
 
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../app.js"></script>
 </body>
 </html>

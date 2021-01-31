@@ -1,18 +1,13 @@
+AOS.init();
 
-function getName() {
-    var nameValue = document.getElementById("nameInput").value;
-    document.cookie = nameValue;
-} 
-
-// function getName() {
-//     document.getElementById("personalGreeting").innerHTML =(greeting+userName+".");
-// }
-
-
-
-// CLOCK AND DATE
+// passing data from index.html
+function passValues() {
+    var name = document.getElementById("nameInput").value;
+    localStorage.setItem("textvalue", name);
+    return false;
+}
+// clock and date 
 function runTime () {
-    let userName = document.cookie;
     var time = new Date();
     var hour = time.getHours();
     var minute = time.getMinutes();
@@ -44,7 +39,8 @@ function runTime () {
         month[11] = "December";
     var fullMonth = month[time.getMonth()];
 
-
+    var copyright = "©"+year+". All rights reserved. Developed by Mashumaru."
+    document.getElementById("footer-info").innerHTML = copyright;
 
     if (minute < 10) {
         minute = "0" + minute;
@@ -54,7 +50,7 @@ function runTime () {
         hour = "0" + hour;
     }
 
-// GREETING MESSAGE
+    // personal greeting message
     if (hour < 12) {
         var greeting = "Good morning, ";
     } else if (hour < 18) {
@@ -62,12 +58,11 @@ function runTime () {
     } else {
         var greeting = "Good evening, ";
     }
-
-    document.getElementById("personalGreeting").innerHTML =(greeting+userName+".");
+    // retrieving data from index.html
+    var userName = localStorage.getItem("textvalue");
+    document.getElementById("personalGreeting").innerHTML = greeting+userName+".";
    
-  
 
-    // CLOCK AND DATE
     document.getElementById("hour").innerHTML = (hour);
     document.getElementById("minute").innerHTML = (minute);
     document.getElementById("day").innerHTML = (fullWeekday + " ");
@@ -75,15 +70,13 @@ function runTime () {
     document.getElementById("month").innerHTML = (fullMonth + " ");
     document.getElementById("year").innerHTML = (year);
 }; setInterval(runTime, 1000);
-// CLOCK AND DATE
 
 
 
+// interface with google
 function handleSearch() {
     var searchValue = document.getElementById("search").value;
     window.open("https://www.google.com/search?q=" + searchValue + "&sourceid=chrome&ie=UTF-8","_blank");
 }
-
-
 
 
