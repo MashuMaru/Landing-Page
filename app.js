@@ -73,24 +73,6 @@ function runTime () {
     document.getElementById("month").innerHTML = (fullMonth + " ");
     document.getElementById("year").innerHTML = (year);
 
-    // var inputIndex = document.getElementById("nameInput");
-    // inputIndex.addEventListener("keyup", function(event) {
-    //     if (event.keyCode === 13) {
-    //      event.preventDefault();
-    //      document.getElementById("submit").click();
-    //     }
-    //   });
-
-    //   var inputLanding = document.getElementById("search");
-    //   inputLanding.addEventListener("keyup", function(event) {
-    //     if (event.keyCode === 13) {
-    //      event.preventDefault();
-    //      document.getElementById("searchBtn").click(handleSearch);
-    //      var searchValue = document.getElementById("search").value;
-    //      window.open("https://www.google.com/search?q=" + searchValue + "&sourceid=chrome&ie=UTF-8","_blank");
-    //     }
-    //   });
-
 }; setInterval(runTime, 1000);
 
 
@@ -100,19 +82,13 @@ function handleSearch() {
     var searchValue = document.getElementById("search").value;
     window.open("https://www.google.com/search?q=" + searchValue + "&sourceid=chrome&ie=UTF-8","_blank");
 }
-
+// eventListener to 'Enter'
 document.getElementById("search").addEventListener("keydown", function(event) {
     if (event.keyCode === 13) {
         document.getElementById("searchBtn").click();
     }
 })
 
-
-document.getElementById("nameInput").addEventListener("keydown", function(event) {
-    if (event.keyCode === 13) {
-        document.getElementById("submit").click();
-    }
-})
 
 
 
